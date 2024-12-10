@@ -6,7 +6,7 @@ Some of these tutorials are based on older releases of 3D Slicer and are being u
 
 See [Getting started](https://slicer.readthedocs.io/en/latest/user_guide/getting_started.html) section of the Slicer User's Guide for installation instructions.
 
-### STC-GEN-101: Welcome Tutorial
+### <a id="STC-GEN-101"/>STC-GEN-101: Welcome Tutorial
 
 Walkthrough of the Welcome module of 3D Slicer.
 
@@ -19,7 +19,7 @@ Walkthrough of the Welcome module of 3D Slicer.
 
 ![image](https://hackmd.io/_uploads/B1l2kTNn0.png)
 
-### STC-GEN-102: Four-minute tutorial
+### <a id="STC-GEN-102"/>STC-GEN-102: Four-minute tutorial
 
 Brief introduction to the advanced 3D visualization capabilities of 3D Slicer.
 
@@ -34,7 +34,7 @@ Brief introduction to the advanced 3D visualization capabilities of 3D Slicer.
 
 ## Visualization
 
-### STC-VIS-101: Basics of Data Loading and Visualization
+### <a id="STC-VIS-101"/>STC-VIS-101: Basics of Data Loading and Visualization
 
 The Basics of Data Loading and Visualization tutorial shows how to load and visualize DICOM images and 3D models in 3D Slicer.
 
@@ -47,7 +47,7 @@ The Basics of Data Loading and Visualization tutorial shows how to load and visu
 
 ![image](https://hackmd.io/_uploads/rywC-krnR.png)
 
-### STC-VIS-102: Data Loading and 3D Visualization
+### <a id="STC-VIS-102"/>STC-VIS-102: Data Loading and 3D Visualization
 
 Introduction to the advanced 3D visualization capabilities of 3D Slicer.
 
@@ -63,7 +63,7 @@ Introduction to the advanced 3D visualization capabilities of 3D Slicer.
 
 ## DICOM
 
-### STC-DICOM-101: DICOM and Slicer
+### <a id="STC-DICOM-101"/>STC-DICOM-101: DICOM and Slicer
 
 The DICOM and Slicer tutorial provides an introduction to the DICOM standard and shows how to load and visualize DICOM datasets in 3D Slicer.
 
@@ -75,7 +75,7 @@ The DICOM and Slicer tutorial provides an introduction to the DICOM standard and
 
 ![image](https://hackmd.io/_uploads/HkGWf1HnC.png)
 
-### STC-DICOM-102: DICOM image visualization
+### <a id="STC-DICOM-102"/>STC-DICOM-102: DICOM image visualization
 
 The 3D Visualization of DICOM images course guides through 3D data loading and visualization of DICOM images for Radiology Applications in 3D Slicer.
 
@@ -103,7 +103,7 @@ Create a 3D-printable surgical skill training phantom from a CT image.
 
 ## Developer tutorials
 
-### STC-DEV-101: Slicer scripting and module development
+### <a id="STC-DEV-101"/>STC-DEV-101: Slicer scripting and module development
 
 Introduction to Python scripting and module development tutorial for 3D Slicer.
 
@@ -115,7 +115,7 @@ Introduction to Python scripting and module development tutorial for 3D Slicer.
 
 ![image](https://hackmd.io/_uploads/ryBmXkSnA.png)
 
-### STC-DEV-102: Slicer programming
+### <a id="STC-DEV-102"/>STC-DEV-102: Slicer programming
 
 Introduction to the Python Console and basic Qt widgets in 3D Slicer.
 
