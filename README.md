@@ -89,7 +89,7 @@ The 3D Visualization of DICOM images course guides through 3D data loading and v
 
 ## Segmentation tutorials
 
-### STC-SEG-102: Segmentation for 3D printing
+### <a id="STC-SEG-102"/>STC-SEG-102: Segmentation for 3D printing
 
 Create a 3D-printable surgical skill training phantom from a CT image.
 
