@@ -1,7 +1,6 @@
-- This page contains "How to" tutorials with matched sample data sets. They demonstrate how to use the 3D Slicer environment to accomplish certain tasks.
-- For "reference manual" style documentation, please see the [Slicer manual on ReadTheDocs](https://slicer.readthedocs.io/en/latest/).
-- For questions related to 3D Slicer training materials and to the organization of 3D Slicer training workshops, please send an e-mail to [Sonia Pujol, Ph.D., Director of Training and Education of 3D Slicer.](https://scholar.harvard.edu/soniapujol/home)
-- Some of these tutorials are based on older releases of 3D Slicer and are being upgraded to Slicer 5.0. The concepts are still useful but some interface elements and features may be different in updated versions.
+This page contains "How to" tutorials with matched sample data sets. They demonstrate how to use the 3D Slicer environment to accomplish certain tasks.
+For "reference manual" style documentation, please see the [Slicer manual on ReadTheDocs](https://slicer.readthedocs.io/en/latest/).
+Some of these tutorials are based on older releases of 3D Slicer and are being upgraded to Slicer 5.0. The concepts are still useful but some interface elements and features may be different in updated versions.
 
 ## General
 
