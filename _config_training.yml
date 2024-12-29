@@ -41,7 +41,6 @@ exclude:
   - assets/img/slicer-solutions/
   - commercial-use.markdown
   - copyright/
-  - index.markdown
   - download.markdown
   - download_40x.markdown
   - LICENSE

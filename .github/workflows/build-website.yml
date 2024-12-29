@@ -38,6 +38,7 @@ jobs:
     - name: 🔨 Prepare
       run: |
         cp training.markdown training-slicer-org/ && \
+        cp training.markdown training-slicer-org/index.markdown && \
         cp _data/tutorials.yml training-slicer-org/_data/ && \
         cp assets/img/* training-slicer-org/assets/img/
 
