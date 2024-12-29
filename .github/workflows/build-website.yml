@@ -1,0 +1,76 @@
+name: Deploy Jekyll site to Pages
+on:
+  push:
+    branches:
+      - $default-branch
+  pull_request:
+    branches:
+      - $default-branch
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+    - name: 📂 setup
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+    - name: 📂 setup slicer-org
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        repository: Slicer/slicer.org
+        path: training-slicer-org
+
+    - name: 🔨 Prepare
+      run: |
+        cp training.markdown training-slicer-org/ && \
+        cp _data/tutorials.yml training-slicer-org/_data/ && \
+        cp assets/img/* training-slicer-org/assets/img/
+
+    - name: 💎 setup ruby
+      uses: ruby/setup-ruby@401c19e14f474b54450cd3905bb8b86e2c8509cf # v1.204.0
+      with:
+        ruby-version: 3.2 # can change this to 2.7 or whatever version you prefer
+
+    - name: Setup Pages
+      id: pages
+      uses: actions/configure-pages@v5
+
+    # See https://github.com/marketplace/actions/jekyll-action-ts
+    - name: 🔨 install dependencies & build site
+      uses: limjh16/jekyll-action-ts@807a5f09755d777bfd3070e9505d02347844c9b2 # v2
+      with:
+        enable_cache: true
+        custom_opts: '-d _site --config training-slicer-org/_config.yml,_config_training.yml'
+        jekyll_src: training-slicer-org
+        jekyll_env: production
+
+    - name: Upload artifact
+      # Automatically uploads an artifact from the './_site' directory by default
+      uses: actions/upload-pages-artifact@v3
+
+  # Deployment job
+#  deploy:
+#    environment:
+#      name: github-pages
+#      url: ${{ steps.deployment.outputs.page_url }}
+#    runs-on: ubuntu-24.04
+#    needs: build
+#    steps:
+#      - name: Deploy to GitHub Pages
+#        id: deployment
+#        uses: actions/deploy-pages@v4

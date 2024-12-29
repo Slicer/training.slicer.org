@@ -1,0 +1,51 @@
+
+url: "https://training.slicer.org"
+
+# Specify the name of the GitHub repository hosting the sources of the generated site.
+github_repository: Slicer/training.slicer.org
+
+# Specifies whether the configuration is for the primary site (https://slicer.org).
+# Set to "true" for slicer.org and "false" for auxiliary sites.
+#
+# Auxiliary sites share the primary site's theme and infrastructure but are served
+# from a different subdomain. For example, https://download.slicer.org, where "download"
+# is the subdomain.
+is_primary_site: false
+
+exclude:
+  #
+  # Important: if you update this list, consider updating _config.yml
+  #
+  # Default
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # This project
+  - assets/favicons/README.md
+  - README.md
+  - favicon.json
+  - faviconData.json
+  - netlify.toml
+  # Exclude regular regular pages from download site
+  - 404.html
+  - assets/img/hero-images/
+  - assets/img/features-bullets.svg
+  - assets/img/image-carousel/
+  - assets/img/slicer-solutions/
+  - commercial-use.markdown
+  - copyright/
+  - index.markdown
+  - download.markdown
+  - download_40x.markdown
+  - LICENSE
+
+include:
+  - index.markdown
+  - training.markdown

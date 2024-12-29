@@ -1,0 +1,192 @@
+- id: general
+  title: General
+  tutorials:
+    - id: STC-GEN-101
+      title: "Welcome Tutorial"
+      description: Walkthrough of the Welcome module of 3D Slicer.
+      details:
+        audience: First-time users who want a general introduction to the software
+        length: 10 minutes
+        modules: Welcome, Sample Data
+        application_version: Slicer-4.8
+        authors:
+          - Sonia Pujol, Ph.D.
+      image: https://hackmd.io/_uploads/B1l2kTNn0.png
+      links:
+        - label: PDF (English)
+          url: https://www.dropbox.com/s/vn8sqlof2kag2kk/SlicerWelcome-tutorial_Slicer4.8_SoniaPujol.pdf
+
+- id: visualization
+  title: Visualization
+  tutorials:
+    - id: STC-VIS-101
+      title: "Basics of Data Loading and Visualization"
+      description: The Basics of Data Loading and Visualization tutorial shows how to load and visualize DICOM images and 3D models in 3D Slicer.
+      details:
+        audience: First-time users who want to discover basic visualization features of 3D Slicer.
+        modules: DICOM, Volume Rendering, Models
+        application_version: Slicer-5.4
+        authors:
+          - Sonia Pujol, Ph.D.
+      image: https://hackmd.io/_uploads/rywC-krnR.png
+      links:
+        - label: PDF (English)
+          url: https://spujol.github.io/SlicerVisualizationTutorial/SlicerVisualizationTutorial_SoniaPujol.pdf
+        - label: PDF (French)
+          url: https://spujol.github.io/SlicerVisualizationTutorial/SlicerVisualizationTutorial_SoniaPujol-FrenchVersion.pdf
+        - label: Website
+          url: https://spujol.github.io/SlicerVisualizationTutorial/
+
+    - id: STC-VIS-102
+      title: "Data Loading and 3D Visualization"
+      description: Introduction to the advanced 3D visualization capabilities of 3D Slicer.
+      details:
+        audience: First-time users who want to discover basic visualization features of 3D Slicer.
+        modules: Welcome to Slicer, Models
+        application_version: Slicer-5.6
+        authors: 
+          - Andras Lasso
+          - Csaba Pinter
+      image: https://hackmd.io/_uploads/r13kzkBh0.png
+      links:
+        - label: PDF (English)
+          url: https://github.com/Slicer/SlicerDataLoadingAndVisualizationTutorial/releases/download/Slicer-5.6/SlicerDataLoadingAndVisualizationTutorial.pdf
+        - label: Website (includes source)
+          url: https://github.com/Slicer/SlicerDataLoadingAndVisualizationTutorial
+
+- id: dicom
+  title: DICOM
+  tutorials:
+    - id: STC-DICOM-101
+      title: "DICOM and Slicer"
+      description: The DICOM and Slicer tutorial provides an introduction to the DICOM standard and shows how to load and visualize DICOM datasets in 3D Slicer.
+      details:
+        audience: First-time users who want to learn about DICOM in Slicer.
+        modules: DICOM, Volumes
+        application_version: Slicer-5.0
+        authors:
+          - Sonia Pujol, Ph.D.
+      image: https://hackmd.io/_uploads/HkGWf1HnC.png
+      links:
+        - label: PDF (English)
+          url: https://spujol.github.io/SlicerDICOMTutorial/3DSlicer_DICOMTutorial_SoniaPujol.pdf
+        - label: PDF (French)
+          url: https://spujol.github.io/SlicerDICOMTutorial/3DSlicer_DICOMTutorial_SoniaPujol-FrenchVersion.pdf
+        - label: Website
+          url: https://spujol.github.io/SlicerDICOMTutorial/
+
+    - id: STC-DICOM-102
+      title: "DICOM Image Visualization"
+      description: Guides through 3D data loading and visualization of DICOM images for Radiology Applications in 3D Slicer.
+      details:
+        audience: Radiologists and users needing a comprehensive overview of 3D visualization capabilities in Slicer.
+        modules: DICOM, Volumes, Volume Rendering, Models
+        application_version: Slicer-4.10
+        authors:
+        - Sonia Pujol, Ph.D.
+        - Kitt Shaffer, M.D., Ph.D.
+        - Ron Kikinis, M.D.
+      image: https://hackmd.io/_uploads/HJzff1BnA.png
+      links:
+        - label: PDF (English)
+          url: https://www.dropbox.com/s/8pm5mty2c0zwmyk/3DVisualizationDICOM_Slicer4.10_SoniaPujol.pdf?dl=0
+
+- id: segmentation
+  title: Segmentation Tutorials
+  tutorials:
+    - id: STC-SEG-102
+      title: "Segmentation for 3D Printing"
+      description: Create a 3D-printable surgical skill training phantom from a CT image.
+      details:
+        audience: Users interested in creating 3D-printed models from 3D images.
+        modules: N/A
+        application_version: Slicer-5.6
+        authors:
+          - Csaba Pinter
+          - Attila Nagy
+      image: https://hackmd.io/_uploads/Bko1_LrnC.png
+      links:
+        - label: PDF (English)
+          url: https://github.com/Slicer/SlicerSegmentationFor3DPrintingTutorial/releases/download/Slicer-5.6/SegmentationFor3DPrinting.pdf
+        - label: Website
+          url: https://github.com/Slicer/SlicerSegmentationFor3DPrintingTutorial
+
+    - title: "Video Tutorial: Whole heart segmentation from cardiac CT"
+      description: Shows how to use the Segment Editor module for segmenting heart ventricles, atria, and great vessels from cardiac CT volumes.
+      details:
+        audience: Users who need to segment heart structures, for example for visualization, quantification, or simulation.
+        authors:
+          - Andras Lasso, PhD
+        application_version: Slicer-4.8
+      image: /assets/img/segmentation-video-whole-heart-from-CT.png
+      datasets:
+        - label: CTA-cardio2.nrrd
+          url: https://github.com/Slicer/slicer.kitware.com-midas3-archive/releases/download/SHA256/6a3d53ae08c70711f1f56323346bc471931e7d055d0e6c180b74d2a5ea0dfd12
+      links:
+        - label: Video (English)
+          url: https://www.youtube.com/watch?v=BJoIexIvtGo
+
+    - title: "Video Tutorial: Femur and pelvis segmentation from CT"
+      description: Shows how to use the Segment Editor module for segmenting pelvis and femur from CT volumes.
+      details:
+        audience: Users who need to segment bones in CT images for visualization, quantification, or simulation.
+        authors:
+          - Andras Lasso, PhD
+        application_version: Slicer-4.8
+      image: /assets/img/segmentation-video-femur-and-pelvis-from-CT.png
+      datasets:
+        - label: Cancer Imaging Archive (Subject TCGA-VP-A878)
+          url: https://wiki.cancerimagingarchive.net/display/Public/TCGA-PRAD
+      links:
+        - label: Video (English)
+          url: https://www.youtube.com/watch?v=BJoIexIvtGo
+
+    - title: Slicer Segmentation Recipes
+      description: Provides step-by-step description of useful segmentation techniques. Segmentation tutorials for common tasks, such as skin surface extraction, craniotomy (splitting segments), sorta segmentation, cerebral vessel segmentation by subtraction, segmentation on arbitrarily oriented slices, skull stripping.
+      image: https://lassoan.github.io/SlicerSegmentationRecipes/AortaMaskedGrowFromSeeds/image-001.png
+      links:
+        - label: Website (English)
+          url: https://lassoan.github.io/SlicerSegmentationRecipes/
+
+- id: developer
+  title: Developer Tutorials
+  tutorials:
+    - id: STC-DEV-101
+      title: "Slicer Scripting and Module Development"
+      description: Introduction to Python scripting and module development tutorial for 3D Slicer.
+      details:
+        audience: Developers, users with some Python scripting experience.
+        modules: N/A
+        application_version: Slicer-5.6
+        authors:
+          - Andras Lasso
+          - Csaba Pinter
+          - Tamas Ungi
+          - Matthew Holden
+          - Kyle Sunderland
+      image: https://hackmd.io/_uploads/ryBmXkSnA.png
+      links:
+        - label: PDF (English)
+          url: https://github.com/Slicer/SlicerProgrammingTutorial/releases/download/Slicer-5.6/SlicerProgrammingTutorial.pdf
+        - label: Website (includes source)
+          url: https://github.com/Slicer/SlicerProgrammingTutorial
+
+    - id: STC-DEV-102
+      title: "Slicer Programming"
+      description: Introduction to the Python Console and basic Qt widgets in 3D Slicer.
+      details:
+        audience: Users interested in using 3D Slicer with Python scripting.
+        modules: N/A
+        application_version: Slicer-5.0
+        authors:
+          - Sonia Pujol, Ph.D.
+          - Steve Pieper, Ph.D.
+      image: https://hackmd.io/_uploads/SJ1PZgHhA.png
+      links:
+        - label: PDF (English)
+          url: https://github.com/spujol/SlicerProgrammingTutorial/releases/latest/download/Slicer5_ProgrammingTutorial_SPujol-SPieper.pdf
+        - label: Website
+          url: https://spujol.github.io/SlicerProgrammingTutorial/
+
+    - title: "Slicer Script Repository"
+      description: For additional Python scripts examples, please visit the <a href="https://slicer.readthedocs.io/en/latest/developer_guide/script_repository.html">Script repository</a>.
