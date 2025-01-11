@@ -33,3 +33,4 @@ readme_index:
 exclude:
   # This project
   - LICENSE.md
+  - netlify.toml
