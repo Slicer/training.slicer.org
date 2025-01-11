@@ -1,16 +1,21 @@
 ---
 title: "3D Slicer Training Compendium"
-subtitle: "This page contains <em>How to</em> tutorials with matched sample datasets. <br/>They demonstrate how to use the 3D Slicer environment to accomplish certain tasks."
+subtitle: Step-by-step how-to guides with matching sample datasets to help you effectively use 3D Slicer for a variety of tasks.
 layout: page
 permalink:
 ---
 
-<article class="message is-info">
-  <div class="message-body">
-    <p>For "reference manual" style documentation, please see the <a href="https://slicer.readthedocs.io/en/latest/">Slicer manual on ReadTheDocs</a>.</p>
-    <p>Some of these tutorials are based on older releases of 3D Slicer and are being upgraded to Slicer 5.0. The concepts are still useful but some interface elements and features may differ in updated versions.</p>
-  </div>
-</article>
+<h2 id="introduction">Introduction</h2>
+<p>
+This page provides hands-on tutorials designed to help users navigate and utilize the 3D Slicer environment for different applications. Each tutorial includes a structured walkthrough with sample datasets to facilitate learning.</p>
+{% include notification.html
+  status="is-info"
+  message="For detailed reference documentation, please visit the [Slicer manual on ReadTheDocs](https://slicer.readthedocs.io/en/latest/).
+" %}
+{% include notification.html
+  status="is-warning"
+  message="Some tutorials are based on older 3D Slicer versions and are being updated for Slicer 5.0. While the core concepts remain relevant, some interface elements or features may have changed.
+" %}
 
 {% for category in site.data.tutorials %}
 <h2 id="{{ category.id }}">{{ category.title }}</h2>
