@@ -65,7 +65,7 @@ This page provides hands-on tutorials designed to help users navigate and utiliz
             {% endif %}
           </ul>
           {% if tutorial.details.application_version %}
-          <div>Tutorial based on<i>{{ tutorial.details.application_version }}</i></div>
+          <div>Tutorial based on <i>{{ tutorial.details.application_version }}</i></div>
           {% endif %}
         </div>
         <div class="column">
