@@ -1,6 +1,6 @@
 # Documentation at https://www.netlify.com/docs/netlify-toml-reference/
 [build]
-  command = "jekyll build"
+  command = "./build.sh --build"
   publish = "_site/"
 
 [build.environment]
@@ -8,4 +8,4 @@
 
 # Copied from https://answers.netlify.com/t/jekyll-site-uses-absolute-urls-deploy-previews-navigate-to-main-site/8441/12
 [context.deploy-preview]
-  command = "printf \"url: %s\" \"$DEPLOY_PRIME_URL\" > _config_netlify.yml; jekyll build --config _config.yml,_config_netlify.yml"
+  command = "printf \"url: %s\" \"$DEPLOY_PRIME_URL\" > _config_netlify.yml; ./build.sh --build --extra-config $(pwd)/_config_netlify.yml"
