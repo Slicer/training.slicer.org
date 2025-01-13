@@ -11,7 +11,7 @@
         application_version: Slicer-4.8
         authors:
           - Sonia Pujol, Ph.D.
-      image: https://hackmd.io/_uploads/B1l2kTNn0.png
+      image: /assets/img/general-tutorial-welcome.png
       links:
         - label: PDF (English)
           url: https://www.dropbox.com/s/vn8sqlof2kag2kk/SlicerWelcome-tutorial_Slicer4.8_SoniaPujol.pdf
@@ -28,7 +28,7 @@
         application_version: Slicer-5.4
         authors:
           - Sonia Pujol, Ph.D.
-      image: https://hackmd.io/_uploads/rywC-krnR.png
+      image: /assets/img/visualization-tutorial-basics-data-loading-and-visualization.png
       links:
         - label: PDF (English)
           url: https://spujol.github.io/SlicerVisualizationTutorial/SlicerVisualizationTutorial_SoniaPujol.pdf
@@ -47,7 +47,7 @@
         authors: 
           - Andras Lasso
           - Csaba Pinter
-      image: https://hackmd.io/_uploads/r13kzkBh0.png
+      image: /assets/img/visualization-tutorial-data-loading-and-3d-visualization.png
       links:
         - label: PDF (English)
           url: https://github.com/Slicer/SlicerDataLoadingAndVisualizationTutorial/releases/download/Slicer-5.6/SlicerDataLoadingAndVisualizationTutorial.pdf
@@ -66,7 +66,7 @@
         application_version: Slicer-5.0
         authors:
           - Sonia Pujol, Ph.D.
-      image: https://hackmd.io/_uploads/HkGWf1HnC.png
+      image: /assets/img/dicom-tutorial-dicom-and-slicer.png
       links:
         - label: PDF (English)
           url: https://spujol.github.io/SlicerDICOMTutorial/3DSlicer_DICOMTutorial_SoniaPujol.pdf
@@ -86,7 +86,7 @@
         - Sonia Pujol, Ph.D.
         - Kitt Shaffer, M.D., Ph.D.
         - Ron Kikinis, M.D.
-      image: https://hackmd.io/_uploads/HJzff1BnA.png
+      image: /assets/img/dicom-tutorial-dicom-image-visualization.png
       links:
         - label: PDF (English)
           url: https://www.dropbox.com/s/8pm5mty2c0zwmyk/3DVisualizationDICOM_Slicer4.10_SoniaPujol.pdf?dl=0
@@ -104,7 +104,7 @@
         authors:
           - Csaba Pinter
           - Attila Nagy
-      image: https://hackmd.io/_uploads/Bko1_LrnC.png
+      image: /assets/img/segmentation-tutorial-segmentation-for-3d-printing.png
       links:
         - label: PDF (English)
           url: https://github.com/Slicer/SlicerSegmentationFor3DPrintingTutorial/releases/download/Slicer-5.6/SegmentationFor3DPrinting.pdf
@@ -164,7 +164,7 @@
           - Tamas Ungi
           - Matthew Holden
           - Kyle Sunderland
-      image: https://hackmd.io/_uploads/ryBmXkSnA.png
+      image: /assets/img/developer-tutorial-slicer-scripting-and-module-development.png
       links:
         - label: PDF (English)
           url: https://github.com/Slicer/SlicerProgrammingTutorial/releases/download/Slicer-5.6/SlicerProgrammingTutorial.pdf
@@ -181,7 +181,7 @@
         authors:
           - Sonia Pujol, Ph.D.
           - Steve Pieper, Ph.D.
-      image: https://hackmd.io/_uploads/SJ1PZgHhA.png
+      image: /assets/img/developer-tutorial-slicer-programming.png
       links:
         - label: PDF (English)
           url: https://github.com/spujol/SlicerProgrammingTutorial/releases/latest/download/Slicer5_ProgrammingTutorial_SPujol-SPieper.pdf
