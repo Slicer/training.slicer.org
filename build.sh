@@ -182,6 +182,9 @@ done < <(find "$SLICER_ORG_SOURCE_DIR" -type f ! -path "$SLICER_ORG_SOURCE_DIR/.
                                    ! -name "index.markdown" \
                                    ! -name ".jekyll-metadata" -print0)
 
+# Export array as a string
+export FILES_TO_COPY_STRING="$(IFS=";"; echo "${FILES_TO_COPY[*]}")"
+
 # Function to copy files only if modified
 copy_files() {
   IFS=";" read -ra FILES <<< "$FILES_TO_COPY_STRING"
@@ -200,25 +203,19 @@ copy_files() {
   done
 }
 
-# Export function and array as a string
-export -f copy_files
-export FILES_TO_COPY_STRING="$(IFS=";"; echo "${FILES_TO_COPY[*]}")"
+copy_files
 
-# If serving mode is enabled, check if `entr` is available
 if $SERVE; then
+
+  # Export function
+  export -f copy_files
+
+  # If serving mode is enabled, check if `entr` is available
   if command -v entr &> /dev/null; then
     echo "Using entr to watch for file changes while serving..."
     (printf "%s\n" "${FILES_TO_COPY[@]%%:*}" | entr bash -c "copy_files") &  # Start entr in the background
-  else
-    echo "entr not found. Falling back to one-time file copy."
-    copy_files
   fi
-else
-  echo "Serve mode not enabled. Copying files once..."
-  copy_files
-fi
 
-if $SERVE; then
   PORT=4000 # Also hard-coded in "$TARGET_DIR/_config_dev.yml"
 
   # Serve the site if --serve is passed
