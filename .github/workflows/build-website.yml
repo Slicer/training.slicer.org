@@ -39,16 +39,10 @@ jobs:
 
     - name: 🔨 Prepare
       run: |
-        cp training.markdown $target_source_dir/ && \
-        cp training.markdown $target_source_dir/index.markdown && \
-        cp _data/tutorials.yml $target_source_dir/_data/ && \
-        cp assets/img/* $target_source_dir/assets/img/
-
-    - name: 🔨 Generate _config_training_revision.yml
-      run: |
-        github_short_sha=$(git -C "$SCRIPT_DIR" rev-parse --short HEAD)
-        echo "training.silcer.org version is $github_short_sha"
-        echo "github_short_sha: ${github_short_sha}" > $target_source_dir/_config_training_revision.yml
+        ./build.sh \
+          --target-source-dir $target_source_dir \
+          --slicer-org-source-dir $target_source_dir \
+          --prepare
 
     - name: 💎 setup ruby
       uses: ruby/setup-ruby@401c19e14f474b54450cd3905bb8b86e2c8509cf # v1.204.0
