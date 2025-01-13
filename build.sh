@@ -23,7 +23,7 @@ show_help() {
   echo "  --target-source-dir PATH       Directory for preparing source files into (default: $TARGET_DIR)."
   echo "  --prepare                      Prepare the environment by cloning, setting up files and skipping cleanup."
   echo "  --install-ruby-deps            Install Ruby dependencies (implies --prepare)."
-  echo "  --slicer-org-checkout SHA      Checkout slicer.org repository to the specified commit SHA."
+  echo "  --slicer-org-checkout SHA      Checkout slicer.org repository to the specified commit SHA (default: $SLICER_ORG_SHA)."
   echo "  --slicer-org-source-dir PATH   Use an existing slicer.org source directory instead of cloning the repo."
   echo "  --build                        Build the site locally into the '_site' directory using Jekyll (implies --prepare)."
   echo "  --serve                        Build and serve the site locally using Jekyll (implies --prepare)."
@@ -35,12 +35,23 @@ show_help() {
 # Argument default values
 BUILD=false
 SERVE=false
-SLICER_ORG_SHA=""
 SLICER_ORG_SOURCE_DIR="" # Custom "slicer.org" source directory
 CLEANUP=true # Flag to track if copied files should be removed on exit
 INSTALL_RUBY_DEPS=false
 PREPARE=false
 EXTRA_CONFIG_OPTS=""
+
+# Extract SHA associated with 'ref'
+GITHUB_WORKFLOW_FILE="$SCRIPT_DIR/.github/workflows/build-website.yml"
+if [[ ! -f "$GITHUB_WORKFLOW_FILE" ]]; then
+  die "GitHub Workflow '$GITHUB_WORKFLOW_FILE' does not exist"
+fi
+set +e
+SLICER_ORG_SHA=$(grep -oP '(?<=slicer_org_sha: )[\da-f]+' "$GITHUB_WORKFLOW_FILE")
+set -e
+if [[ -z "$SLICER_ORG_SHA" ]]; then
+  die "No Slicer SHA found in $GITHUB_WORKFLOW_FILE"
+fi
 
 # Parse arguments
 while [[ $# -gt 0 ]]; do
@@ -128,7 +139,7 @@ prepare_environment() {
     # Clone the repository if it does not exist
     if [[ ! -d "$source_dir" ]]; then
       echo "Cloning slicer.org repository..."
-      git clone --depth 1 https://github.com/Slicer/slicer.org.git "$source_dir"
+      git clone https://github.com/Slicer/slicer.org.git "$source_dir"
       cloned=true
     else
       echo "Repository already exists. Skipping clone."
@@ -142,7 +153,7 @@ prepare_environment() {
     # Perform checkout if explicitly requested or if the repo was freshly cloned
     if [[ -n "$SLICER_ORG_SHA" || "$cloned" == true ]]; then
       echo "Checking out commit: ${SLICER_ORG_SHA:-HEAD}"
-      (cd "$source_dir" && git checkout "${SLICER_ORG_SHA:-HEAD}")
+      (cd "$source_dir" && git fetch origin && git checkout "${SLICER_ORG_SHA:-HEAD}")
     fi
 
     SLICER_ORG_SOURCE_DIR="$source_dir"

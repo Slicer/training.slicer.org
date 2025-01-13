@@ -8,4 +8,4 @@
 
 # Copied from https://answers.netlify.com/t/jekyll-site-uses-absolute-urls-deploy-previews-navigate-to-main-site/8441/12
 [context.deploy-preview]
-  command = "printf \"url: %s\" \"$DEPLOY_PRIME_URL\" > _config_netlify.yml; ./build.sh --install-ruby-deps --build --extra-config $(pwd)/_config_netlify.yml"
+  command = "printf \"url: %s\" \"$DEPLOY_PRIME_URL\" > _config_netlify.yml; rm -rf slicer-org; ./build.sh --install-ruby-deps --build --extra-config $(pwd)/_config_netlify.yml"
