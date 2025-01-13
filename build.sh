@@ -22,6 +22,7 @@ show_help() {
   echo "Options:"
   echo "  --target-source-dir PATH       Directory for preparing source files into (default: $TARGET_DIR)."
   echo "  --prepare                      Prepare the environment by cloning, setting up files and skipping cleanup."
+  echo "  --install-ruby-deps            Install Ruby dependencies (implies --prepare)."
   echo "  --slicer-org-checkout SHA      Checkout slicer.org repository to the specified commit SHA."
   echo "  --slicer-org-source-dir PATH   Use an existing slicer.org source directory instead of cloning the repo."
   echo "  --build                        Build the site locally into the '_site' directory using Jekyll (implies --prepare)."
@@ -37,6 +38,7 @@ SERVE=false
 SLICER_ORG_SHA=""
 SLICER_ORG_SOURCE_DIR="" # Custom "slicer.org" source directory
 CLEANUP=true # Flag to track if copied files should be removed on exit
+INSTALL_RUBY_DEPS=false
 PREPARE=false
 EXTRA_CONFIG_OPTS=""
 
@@ -46,6 +48,9 @@ while [[ $# -gt 0 ]]; do
     --target-source-dir)
       shift
       TARGET_DIR="$(realpath "$1")"  # Get absolute path to avoid issues
+      ;;
+    --install-ruby-deps)
+      INSTALL_RUBY_DEPS=true
       ;;
     --prepare)
       PREPARE=true
@@ -84,6 +89,10 @@ while [[ $# -gt 0 ]]; do
   shift
 done
 
+if [[ "$INSTALL_RUBY_DEPS" == true || "$BUILD" == true || "$SERVE" == true ]]; then
+  PREPARE=true
+fi
+
 if $PREPARE; then
   CLEANUP=false
 fi
@@ -92,8 +101,8 @@ if [[ "$BUILD" == true && "$SERVE" == true ]]; then
   die "Options --build and --serve are mutually exclusive."
 fi
 
-if [[ "$PREPARE" != true && "$BUILD" != true && "$SERVE" != true ]]; then
-  die "At least one of these options should be specified: --prepare, --build or --serve."
+if [[ "$PREPARE" != true && "$INSTALL_RUBY_DEPS" != true && "$BUILD" != true && "$SERVE" != true ]]; then
+  die "At least one of these options should be specified: --prepare, --install-ruby-deps, --build or --serve."
 fi
 
 prepare_environment() {
@@ -139,6 +148,7 @@ prepare_environment() {
     SLICER_ORG_SOURCE_DIR="$source_dir"
   fi
 }
+
 
 prepare_environment
 
@@ -204,7 +214,10 @@ copy_files() {
 }
 
 copy_files
-(cd $TARGET_DIR && bundle install)
+
+if $INSTALL_RUBY_DEPS; then
+  (cd $TARGET_DIR && bundle install)
+fi
 
 if $SERVE; then
 
