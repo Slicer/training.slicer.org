@@ -8,13 +8,13 @@ It is generated leveraging the static site implemented in https://github.com/Sli
 ## Production
 
 The branch [training-slicer-org][branch-training-slicer-org]  is automatically updated using the GitHub Action workflow
-described in [.github/workflows/build-website.yml](.github/workflows/build-website.yml) when any of the following are updated:
+described in [.github/workflows/build-website.yml][file-build-website-yml] when any of the following are updated:
 * [training.markdown][file-training-markdown]
 * [_data/tutorial.yml][file-tutorial-yml]
-* SHA of the version of [Slicer/slicer.org][github-slicer-org] hard-coded in [build.sh][file-build-sh]
+* SHA of the version of [Slicer/slicer.org][github-slicer-org] hard-coded in [.github/workflows/build-website.yml][file-build-website-yml]
 
 [branch-training-slicer-org]: https://github.com/Slicer/slicer.org/tree/training-slicer-org
-[file-build-sh]: https://github.com/Slicer/training.slicer.org/blob/main/build.sh
+[file-build-website-yml]: https://github.com/Slicer/training.slicer.org/blob/main/.github/workflows/build-website.yml
 [file-training-markdown]: https://github.com/Slicer/training.slicer.org/blob/main/training.markdown
 [file-tutorial-yml]: https://github.com/Slicer/training.slicer.org/blob/main/_data/tutorial.yml
 [github-slicer-org]: https://github.com/Slicer/slicer.org
