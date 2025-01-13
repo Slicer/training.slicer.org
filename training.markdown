@@ -49,9 +49,6 @@ This page provides hands-on tutorials designed to help users navigate and utiliz
             {% if tutorial.details.modules %}
             <li><strong>Modules:</strong> {{ tutorial.details.modules }}</li>
             {% endif %}
-            {% if tutorial.details.application_version %}
-            <li><strong>Application version:</strong> {{ tutorial.details.application_version }}</li>
-            {% endif %}
             {% if tutorial.details.authors %}
             <li><strong>Authors:</strong>
               {% for author in tutorial.details.authors %}
@@ -67,6 +64,9 @@ This page provides hands-on tutorials designed to help users navigate and utiliz
             </li>
             {% endif %}
           </ul>
+          {% if tutorial.details.application_version %}
+          <div>Tutorial based of <i>{{ tutorial.details.application_version }}</i></div>
+          {% endif %}
         </div>
         <div class="column">
           {% if tutorial.image %}
