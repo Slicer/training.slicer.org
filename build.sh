@@ -204,6 +204,7 @@ copy_files() {
 }
 
 copy_files
+(cd $TARGET_DIR && bundle install)
 
 if $SERVE; then
 
