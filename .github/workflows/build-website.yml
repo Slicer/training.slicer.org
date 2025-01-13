@@ -27,6 +27,7 @@ jobs:
     runs-on: ubuntu-24.04
     env:
       target_source_dir: training-slicer-org
+      slicer_org_sha: 5832583bf58610740f4fe72d273f2887c438fffe
     steps:
     - name: 📂 setup
       uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -36,6 +37,7 @@ jobs:
       with:
         repository: Slicer/slicer.org
         path: ${{ env.target_source_dir }}
+        ref: ${{ env.slicer_org_sha }}
 
     - name: 🔨 Prepare
       run: |
