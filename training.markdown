@@ -7,7 +7,7 @@ permalink:
 
 <h2 id="introduction">Introduction</h2>
 <p>
-This page provides hands-on tutorials designed to help users navigate and utilize the 3D Slicer environment for different applications. Each tutorial includes a structured walkthrough with sample datasets to facilitate learning.</p>
+This page provides hands-on tutorials designed to help users navigate and utilize the 3D Slicer environment for different applications. Each tutorial includes a structured walkthrough with sample datasets to facilitate learning. For questions related to the 3D Slicer Training Compendium, please contact Sonia Pujol, Ph.D., Director of 3D Slicer Training (spujol at bwh.harvard.edu).</p>
 {% include notification.html
   status="is-info"
   message="For detailed reference documentation, please visit the [Slicer manual on ReadTheDocs](https://slicer.readthedocs.io/en/latest/).
