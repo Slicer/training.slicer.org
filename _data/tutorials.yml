@@ -15,6 +15,10 @@
       links:
         - label: PDF (English)
           url: https://www.dropbox.com/s/vn8sqlof2kag2kk/SlicerWelcome-tutorial_Slicer4.8_SoniaPujol.pdf
+        - label: PDF (Portuguese)
+          url: https://slicerlatinamerica.github.io/media/Tutorials/Welcome_Pt.pdf
+        - label: PDF (Spanish)
+          url: https://slicerlatinamerica.github.io/media/Tutorials/Welcome_Es.pdf
 
 - id: visualization
   title: Visualization
@@ -34,6 +38,10 @@
           url: https://spujol.github.io/SlicerVisualizationTutorial/SlicerVisualizationTutorial_SoniaPujol.pdf
         - label: PDF (French)
           url: https://spujol.github.io/SlicerVisualizationTutorial/SlicerVisualizationTutorial_SoniaPujol-FrenchVersion.pdf
+        - label: PDF (Portuguese)
+          url: https://slicerlatinamerica.github.io/media/Tutorials/Basics_of_Data_Loading_Pt.pdf
+        - label: PDF (Spanish)
+          url: https://slicerlatinamerica.github.io/media/Tutorials/Basics_of_Data_Loading_Es.pdf
         - label: Website
           url: https://spujol.github.io/SlicerVisualizationTutorial/
 
@@ -72,6 +80,10 @@
           url: https://spujol.github.io/SlicerDICOMTutorial/3DSlicer_DICOMTutorial_SoniaPujol.pdf
         - label: PDF (French)
           url: https://spujol.github.io/SlicerDICOMTutorial/3DSlicer_DICOMTutorial_SoniaPujol-FrenchVersion.pdf
+        - label: PDF (Portuguese)
+          url: https://slicerlatinamerica.github.io/media/Tutorials/DICOM_Pt.pdf
+        - label: PDF (Spanish)
+          url: https://slicerlatinamerica.github.io/media/Tutorials/DICOM_Es.pdf
         - label: Website
           url: https://spujol.github.io/SlicerDICOMTutorial/
 
