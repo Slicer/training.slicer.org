@@ -160,6 +160,23 @@
         - label: Website (English)
           url: https://lassoan.github.io/SlicerSegmentationRecipes/
 
+    - id: STC-SEG-103
+      title: "AI-Based Segmentation in 3D Slicer"
+      description: Segmentation of prostate, brain glioma and whole body using MONAIAuto3DSeg extension
+      details:
+        audience: Users interested in learning about AI-based segmentation in 3D Slicer
+        modules: MONAIAuto3DSeg
+        application_version: Slicer-5.8
+        authors:
+          - Sonia Pujol, Ph.D.
+      image: /assets/img/ai-based-segmentation-in-3d-slicer.png
+      datasets:
+        - label: SliderData.zip
+          url: https://www.dropbox.com/scl/fi/mdbz1gklawyxmi0tukxpu/SlicerData.zip?rlkey=7lymqsoa39e9pkr1v8hatq2e2&dl=0
+      links:
+        - label: PDF (English)
+          url: https://github.com/SlicerLatinAmerica/SlicerLatinAmerica.github.io/blob/main/media/Tutorials/SlicerTutorialAiBasedSegmentationIn3dSlicer-SPujol_en-US.pdf
+
 - id: developer
   title: Developer Tutorials
   tutorials:
