@@ -14,11 +14,11 @@
       image: /assets/img/general-tutorial-welcome.png
       links:
         - label: PDF (English)
-          url: https://www.dropbox.com/s/vn8sqlof2kag2kk/SlicerWelcome-tutorial_Slicer4.8_SoniaPujol.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/SlicerWelcome-SPujol_en_US.pdf
         - label: PDF (Portuguese)
-          url: https://slicerlatinamerica.github.io/media/Tutorials/Welcome_Pt.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/SlicerWelcome-SPujol_pt_BR.pdf
         - label: PDF (Spanish)
-          url: https://slicerlatinamerica.github.io/media/Tutorials/Welcome_Es.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/SlicerWelcome-SPujol_es_419.pdf
 
 - id: visualization
   title: Visualization
@@ -35,13 +35,13 @@
       image: /assets/img/visualization-tutorial-basics-data-loading-and-visualization.png
       links:
         - label: PDF (English)
-          url: https://spujol.github.io/SlicerVisualizationTutorial/SlicerVisualizationTutorial_SoniaPujol.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/SlicerVisualizationTutorial-SPujol_en_US.pdf
         - label: PDF (French)
-          url: https://spujol.github.io/SlicerVisualizationTutorial/SlicerVisualizationTutorial_SoniaPujol-FrenchVersion.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/SlicerVisualizationTutorial-SPujol_fr.pdf
         - label: PDF (Portuguese)
-          url: https://slicerlatinamerica.github.io/media/Tutorials/Basics_of_Data_Loading_Pt.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/SlicerVisualizationTutorial-SPujol_pt_BR.pdf
         - label: PDF (Spanish)
-          url: https://slicerlatinamerica.github.io/media/Tutorials/Basics_of_Data_Loading_Es.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/SlicerVisualizationTutorial-SPujol_es_419.pdf
         - label: Website
           url: https://spujol.github.io/SlicerVisualizationTutorial/
 
@@ -77,13 +77,13 @@
       image: /assets/img/dicom-tutorial-dicom-and-slicer.png
       links:
         - label: PDF (English)
-          url: https://spujol.github.io/SlicerDICOMTutorial/3DSlicer_DICOMTutorial_SoniaPujol.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/3DSlicerDICOMTutorial-SPujol_en_US.pdf
         - label: PDF (French)
-          url: https://spujol.github.io/SlicerDICOMTutorial/3DSlicer_DICOMTutorial_SoniaPujol-FrenchVersion.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/3DSlicerDICOMTutorial-SPujol_fr.pdf
         - label: PDF (Portuguese)
-          url: https://slicerlatinamerica.github.io/media/Tutorials/DICOM_Pt.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/3DSlicerDICOMTutorial-SPujol_pt_BR.pdf
         - label: PDF (Spanish)
-          url: https://slicerlatinamerica.github.io/media/Tutorials/DICOM_Es.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/3DSlicerDICOMTutorial-SPujol_es_419.pdf
         - label: Website
           url: https://spujol.github.io/SlicerDICOMTutorial/
 
@@ -101,7 +101,7 @@
       image: /assets/img/dicom-tutorial-dicom-image-visualization.png
       links:
         - label: PDF (English)
-          url: https://www.dropbox.com/s/8pm5mty2c0zwmyk/3DVisualizationDICOM_Slicer4.10_SoniaPujol.pdf?dl=0
+          url: https://slicerlatinamerica.github.io/media/Tutorials/3DVisualizationDICOM-SPujol-KShaffer-RKikinis_en_US.pdf
 
 - id: segmentation
   title: Segmentation Tutorials
@@ -160,6 +160,23 @@
         - label: Website (English)
           url: https://lassoan.github.io/SlicerSegmentationRecipes/
 
+    - id: STC-SEG-103
+      title: "AI-Based Segmentation in 3D Slicer"
+      description: Segmentation of prostate, brain glioma and whole body using MONAIAuto3DSeg extension
+      details:
+        audience: Users interested in learning about AI-based segmentation in 3D Slicer
+        modules: MONAIAuto3DSeg
+        application_version: Slicer-5.8
+        authors:
+          - Sonia Pujol, Ph.D.
+      image: /assets/img/ai-based-segmentation-in-3d-slicer.png
+      datasets:
+        - label: SliderData.zip
+          url: https://www.dropbox.com/scl/fi/mdbz1gklawyxmi0tukxpu/SlicerData.zip?rlkey=7lymqsoa39e9pkr1v8hatq2e2&dl=0
+      links:
+        - label: PDF (English)
+          url: https://github.com/SlicerLatinAmerica/SlicerLatinAmerica.github.io/blob/main/media/Tutorials/SlicerTutorialAiBasedSegmentationIn3dSlicer-SPujol_en-US.pdf
+
 - id: developer
   title: Developer Tutorials
   tutorials:
@@ -196,7 +213,7 @@
       image: /assets/img/developer-tutorial-slicer-programming.png
       links:
         - label: PDF (English)
-          url: https://github.com/spujol/SlicerProgrammingTutorial/releases/latest/download/Slicer5_ProgrammingTutorial_SPujol-SPieper.pdf
+          url: https://slicerlatinamerica.github.io/media/Tutorials/SlicerProgramming-SPujol-SPieper_en_US.pdf
         - label: Website
           url: https://spujol.github.io/SlicerProgrammingTutorial/
 
