@@ -14,11 +14,11 @@
       image: /assets/img/general-tutorial-welcome.png
       links:
         - label: PDF (English)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/SlicerWelcome-SPujol_en_US.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/SlicerWelcome-SPujol_en_US.pdf
         - label: PDF (Portuguese)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/SlicerWelcome-SPujol_pt_BR.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/SlicerWelcome-SPujol_pt_BR.pdf
         - label: PDF (Spanish)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/SlicerWelcome-SPujol_es_419.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/SlicerWelcome-SPujol_es_419.pdf
 
 - id: visualization
   title: Visualization
@@ -35,13 +35,13 @@
       image: /assets/img/visualization-tutorial-basics-data-loading-and-visualization.png
       links:
         - label: PDF (English)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/SlicerVisualizationTutorial-SPujol_en_US.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/SlicerVisualizationTutorial-SPujol_en_US.pdf
         - label: PDF (French)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/SlicerVisualizationTutorial-SPujol_fr.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/SlicerVisualizationTutorial-SPujol_fr.pdf
         - label: PDF (Portuguese)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/SlicerVisualizationTutorial-SPujol_pt_BR.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/SlicerVisualizationTutorial-SPujol_pt_BR.pdf
         - label: PDF (Spanish)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/SlicerVisualizationTutorial-SPujol_es_419.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/SlicerVisualizationTutorial-SPujol_es_419.pdf
         - label: Website
           url: https://spujol.github.io/SlicerVisualizationTutorial/
 
@@ -77,13 +77,13 @@
       image: /assets/img/dicom-tutorial-dicom-and-slicer.png
       links:
         - label: PDF (English)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/3DSlicerDICOMTutorial-SPujol_en_US.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/3DSlicerDICOMTutorial-SPujol_en_US.pdf
         - label: PDF (French)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/3DSlicerDICOMTutorial-SPujol_fr.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/3DSlicerDICOMTutorial-SPujol_fr.pdf
         - label: PDF (Portuguese)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/3DSlicerDICOMTutorial-SPujol_pt_BR.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/3DSlicerDICOMTutorial-SPujol_pt_BR.pdf
         - label: PDF (Spanish)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/3DSlicerDICOMTutorial-SPujol_es_419.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/3DSlicerDICOMTutorial-SPujol_es_419.pdf
         - label: Website
           url: https://spujol.github.io/SlicerDICOMTutorial/
 
@@ -101,7 +101,7 @@
       image: /assets/img/dicom-tutorial-dicom-image-visualization.png
       links:
         - label: PDF (English)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/3DVisualizationDICOM-SPujol-KShaffer-RKikinis_en_US.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/3DVisualizationDICOM-SPujol-KShaffer-RKikinis_en_US.pdf
 
 - id: segmentation
   title: Segmentation Tutorials
@@ -175,7 +175,7 @@
           url: https://www.dropbox.com/scl/fi/mdbz1gklawyxmi0tukxpu/SlicerData.zip?rlkey=7lymqsoa39e9pkr1v8hatq2e2&dl=0
       links:
         - label: PDF (English)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/SlicerTutorialAiBasedSegmentationIn3dSlicer-SPujol_en-US.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/SlicerTutorialAiBasedSegmentationIn3dSlicer-SPujol_en-US.pdf
 
 - id: developer
   title: Developer Tutorials
@@ -213,7 +213,7 @@
       image: /assets/img/developer-tutorial-slicer-programming.png
       links:
         - label: PDF (English)
-          url: https://soniapujollab.github.io/public/assets/pdfs/Tutorials/SlicerProgramming-SPujol-SPieper_en_US.pdf
+          url: https://slicerlatinamerica.github.io/public/assets/pdfs/Tutorials/SlicerProgramming-SPujol-SPieper_en_US.pdf
         - label: Website
           url: https://spujol.github.io/SlicerProgrammingTutorial/
 
