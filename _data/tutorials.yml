@@ -151,7 +151,7 @@
           url: https://www.cancerimagingarchive.net/collection/tcga-prad/
       links:
         - label: Video (English)
-          url: https://www.youtube.com/watch?v=BJoIexIvtGo
+          url: https://www.youtube.com/watch?v=0at15gjk-Ns
 
     - title: Slicer Segmentation Recipes
       description: Provides step-by-step description of useful segmentation techniques. Segmentation tutorials for common tasks, such as skin surface extraction, craniotomy (splitting segments), sorta segmentation, cerebral vessel segmentation by subtraction, segmentation on arbitrarily oriented slices, skull stripping.
